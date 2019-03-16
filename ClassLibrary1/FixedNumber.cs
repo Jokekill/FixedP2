@@ -11,15 +11,15 @@ namespace ClassLibrary1
         public abstract int ShiftAmount  {get;}       
     }
 
-    class Q24_8 : FixedNumber
+    public class Q24_8 : FixedNumber
     {
         public override int ShiftAmount { get => 8;}
     }
-    class Q16_16 : FixedNumber
+    public class Q16_16 : FixedNumber
     {
         public override int ShiftAmount { get => 16; }
     }
-    class Q8_24 : FixedNumber
+    public class Q8_24 : FixedNumber
     {
         public override int ShiftAmount { get => 24; }
     }
