@@ -1,6 +1,6 @@
 ﻿namespace TestingMyThoughts
 {
-    using ClassLibrary1;
+    using Cuni.Arithmetics.FixedPoint;
     using System;
 
     /// <summary>

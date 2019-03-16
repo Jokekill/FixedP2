@@ -1,5 +1,5 @@
 ﻿using System;
-using ClassLibrary1;
+using Cuni.Arithmetics.FixedPoint;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UnitTestProject2

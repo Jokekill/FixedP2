@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingMyThoughts", "TestingMyThoughts\TestingMyThoughts.csproj", "{5026D1A4-8AEF-4B05-9A76-32D50671825F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{F41DEC5A-773F-435E-AA35-10FE6FED7790}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cuni.Arithmetics.FixedPoint", "ClassLibrary1\Cuni.Arithmetics.FixedPoint.csproj", "{F41DEC5A-773F-435E-AA35-10FE6FED7790}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject2", "UnitTestProject2\UnitTestProject2.csproj", "{F36DA358-D7B7-40EE-AF20-68FA02318366}"
 EndProject
