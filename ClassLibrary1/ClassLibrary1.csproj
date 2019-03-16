@@ -43,9 +43,6 @@
   <ItemGroup>
     <Compile Include="FixedT.cs" />
     <Compile Include="FixedNumber.cs" />
-    <Compile Include="Q248.cs" />
-    <Compile Include="Q1616.cs" />
-    <Compile Include="Q824.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
