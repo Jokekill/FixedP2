@@ -14,7 +14,19 @@ namespace ClassLibrary1
     public Fixed(int value)
     {
         ShiftAmount = (new T()).ShiftAmount;
-        this.value = value << ShiftAmount;
+        
+        // owerflow detection
+        if (value >= (1<<(31 - ShiftAmount)))
+        {
+            //Console.WriteLine("Overflow detected. This value is to high: " + value + " maximum is : " + ((1 << (31 - ShiftAmount))-1));
+            throw new OverflowException("This value is to high: " + value);
+        }
+        if (value < (1 << (31 - ShiftAmount))*(-1))
+        {
+            //Console.WriteLine("Overflow detected. This value is to low: " + value + " maximum is : " + ((1 << (31 - ShiftAmount))));
+            throw new OverflowException("This value is to low: " + value);
+        }
+            this.value = value << ShiftAmount;
     }
 
     public Fixed<T> Add(Fixed<T> x) 
@@ -39,6 +51,10 @@ namespace ClassLibrary1
     public Fixed<T> Divide(Fixed<T> x)
     {
         Int64 tmpa = (Int64)value << ShiftAmount;
+        if (x.value == 0)
+        {
+            throw new DivideByZeroException();
+        }
         double tmp = (double) tmpa / x.value;
         for (int i = 0; i < ShiftAmount; i++)
         {
